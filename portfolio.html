@@ -5,23 +5,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="./assets/style/reset.css"> -->
+    <link rel="stylesheet" type="text/css" href="./assets/stylesheet.css">
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/reset.css">
-    <link rel="stylesheet" href="./assets/style.css">
 </head>
 
 <body>
-    <header id="masthead">
-        <div class="container">
-            <a href="index.html" id="logo">Robert Queeney</a>
-            <nav>
-                <a href="index.html">About</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </div>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-fixed-top">
 
+        <div class="container">
+            <a class="navbar-brand" href="#">Robert's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Portfolio
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <div class="card-deck">
+        <div class="col-xs-12 col-s-12 col-m-6 col-l-3">
+
+            <div class="card card-custom-styling">
+                <div class="img-container">
+                    <img class="card-img-top" src="./assets/images/Footballer Game.JPG" alt="Card image">
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Footballer Game</h4>
+                    <p class="card-text">Some example text.</p>
+                    <a href="https://github.com/madisonkoch/Footballer-App" target="_blank" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">See Code</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-xs-12 col-s-12 col-m-6 col-l-3">
+
+            <div class="card card-custom-styling">
+                <div class="img-container">
+                    <img class="card-img-top" src="./assets/images/NY Times.JPG" alt="Card image">
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Ny Times App</h4>
+                    <p class="card-text">Some example text.</p>
+                    <a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">See Code</a>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="col-xs-12 col-s-12 col-m-6 col-l-3">
+
+            <div class="card card-custom-styling">
+                <div class="img-container">
+                    <img class="card-img-top" src="./assets/images/BPA.JPG" alt="Card image">
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Boring Political App</h4>
+                    <p class="card-text">Some example text.</p>
+                    <a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">See Code</a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-xs-12 col-s-12 col-m-6 col-l-3">
+
+            <div class="card card-custom-styling">
+                <div class="img-container">
+                    <img class="card-img-top" src="./assets/images/GiphyApi.JPG" alt="Card image">
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Dynamically Created gif App</h4>
+                    <p class="card-text">Some example text.</p>
+                    <a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">See Code</a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-xs-12 col-s-12 col-m-6 col-l-3">
+
+            <div class="card card-custom-styling">
+                <div class="img-container">
+                    <a href="https://github.com/Danielthweatt/DonationApp">
+                    <img class="card-img-top" src="./assets/images/Donation App.JPG" alt="Card image"></a>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Donation Site Template App</h4>
+                    <p class="card-text">Some example text.</p>
+                    <a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">See Code</a>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="col-xs-12 col-s-12 col-m-6 col-l-3">
+
+            <div class="card card-custom-styling">
+                <div class="img-container">
+                    <img class="card-img-top" src="./assets/images/LinkedList.JPG" alt="Card image"></a>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Linked List React App</h4>
+                    <p class="card-text">Some example text.</p>
+                    <a href="https://github.com/Robert-Queeney/react_list_app" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">See Code</a>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
 </body>
 
 </html>
