@@ -152,25 +152,46 @@ body {
   /* portfolio page */
 
   .port-container{
-    display: flex; 
+    padding-top: 130px; 
     /* flex-direction: column; */
     min-height: 800px; 
   }
   
   .card-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap; 
   }
 
   .card{
-    display: block; 
-    height: 350px; 
+    display: flex; 
+    flex-direction: column;
+    height: 500px; 
     width: 300px; 
+    border: 1px solid black;
+    margin: 30px; 
+    
+  }
+
+  .img-container{
+    display: flex; 
+    width: 100%;
+    justify-content: center;
   }
 
   .port-img{
-    object-fit: scale-down;
+    height:300px; 
+    width: 300px; 
+    object-fit: contain;
   }
+
+  .card-body{
+    padding: 10px; 
+  }
+
+  /* .port-img{
+    
+  } */
   
   /* contact page */
   

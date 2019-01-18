@@ -5,143 +5,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/reset.css">
+    <link rel="stylesheet" href="./assets/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <!-- <link rel="stylesheet" type="text/css" href="./assets/style/reset.css"> -->
-    <link rel="stylesheet" type="text/css" href="./assets/stylesheet.css">
-    <title>Document</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-fixed-top">
-
+    <header id="masthead">
         <div class="container">
-            <a class="navbar-brand" href="#">Robert's Portfolio</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html">Home</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Portfolio
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
-                    </li>
-                </ul>
-            </div>
+            <a href="index.html" id="logo">Robert Queeney</a>
+            <nav>
+                <a href="index.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </nav>
         </div>
+    </header>
 
-    </nav>
-    <div class="card-deck">
-        <div class="col-xs-12 col-s-12 col-m-6 col-l-3">
-
-            <div class="card card-custom-styling">
-                <div class="img-container">
-                    <img class="card-img-top" src="./assets/images/Footballer Game.JPG" alt="Card image">
-                </div>
+    <div class="port-container">
+        <div class="card-container">
+            <div class="card">
+                <div class="img-container"><img class="port-img" src="./assets/images/Footballer Game.JPG" alt="football"></div>
                 <div class="card-body">
-                    <h4 class="card-title">Footballer Game</h4>
-                    <p class="card-text">Some example text.</p>
-                    <a href="https://github.com/madisonkoch/Footballer-App" target="_blank" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">See Code</a>
+                    <h4 class=card.title>Footballer App</h4>
+                    <p class="card-text">A simple football simulation game using JS, HTML, CSS, and Node.js</p>
+                    <a href="https://github.com/madisonkoch/Footballer-App" target="_blank" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">See
+                        Code</a>
                 </div>
             </div>
-
-        </div>
-        <div class="col-xs-12 col-s-12 col-m-6 col-l-3">
-
-            <div class="card card-custom-styling">
-                <div class="img-container">
-                    <img class="card-img-top" src="./assets/images/NY Times.JPG" alt="Card image">
-                </div>
+            <div class="card">
+                <div class="img-container"><img class="port-img" src="./assets/images/LinkedList.JPG" alt="linked"></div>
                 <div class="card-body">
-                    <h4 class="card-title">Ny Times App</h4>
-                    <p class="card-text">Some example text.</p>
-                    <a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">See Code</a>
+                    <h4 class=card.title>React Linked List</h4>
+                    <p class="card-text">A simple react app that showcases many common functions of react apps</p>
+                    <a href="https://github.com/Robert-Queeney/react_list_app" target="_blank" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">See
+                        Code</a>
                 </div>
-
             </div>
-
-
-        </div>
-        <div class="col-xs-12 col-s-12 col-m-6 col-l-3">
-
-            <div class="card card-custom-styling">
-                <div class="img-container">
-                    <img class="card-img-top" src="./assets/images/BPA.JPG" alt="Card image">
-                </div>
+            <div class="card">
+                <div class="img-container"><img class="port-img" src="./assets/images/NY Times.JPG" alt="ny"></div>
                 <div class="card-body">
-                    <h4 class="card-title">Boring Political App</h4>
-                    <p class="card-text">Some example text.</p>
-                    <a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">See Code</a>
+                    <h4 class=card.title>Ny Times Scraper App</h4>
+                    <p class="card-text">An app designed to scape news stories based on a number of criteria</p>
+                    <a href="https://github.com/Robert-Queeney/nytreact" target="_blank" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">See
+                        Code</a>
                 </div>
-
             </div>
-
-        </div>
-        <div class="col-xs-12 col-s-12 col-m-6 col-l-3">
-
-            <div class="card card-custom-styling">
-                <div class="img-container">
-                    <img class="card-img-top" src="./assets/images/GiphyApi.JPG" alt="Card image">
-                </div>
+            <div class="card">
+                <div class="img-container"><img class="port-img" src="./assets/images/BPA.JPG" alt="football"></div>
                 <div class="card-body">
-                    <h4 class="card-title">Dynamically Created gif App</h4>
-                    <p class="card-text">Some example text.</p>
-                    <a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">See Code</a>
+                    <h4 class=card.title>Boring Politial App</h4>
+                    <p class="card-text">A simple football simulation game using JS, HTML, CSS, and Node.js</p>
+                    <a href="https://github.com/Robert-Queeney/Boring-Political-App" target="_blank" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">See
+                        Code</a>
                 </div>
-
             </div>
-
-        </div>
-        <div class="col-xs-12 col-s-12 col-m-6 col-l-3">
-
-            <div class="card card-custom-styling">
-                <div class="img-container">
-                    <a href="https://github.com/Danielthweatt/DonationApp">
-                    <img class="card-img-top" src="./assets/images/Donation App.JPG" alt="Card image"></a>
-                </div>
+            <div class="card">
+                <div class="img-container"><img class="port-img" src="./assets/images/React-Api.JPG" alt="football"></div>
                 <div class="card-body">
-                    <h4 class="card-title">Donation Site Template App</h4>
-                    <p class="card-text">Some example text.</p>
-                    <a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">See Code</a>
+                    <h4 class=card.title>React Movie API App</h4>
+                    <p class="card-text">A react app that makes an API call using fetch and dynamically renders posters
+                        with movie information and images.</p>
+                    <a href="https://github.com/Robert-Queeney/Boring-Political-App" target="_blank" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">See
+                        Code</a>
                 </div>
-
             </div>
-
-
-        </div>
-        <div class="col-xs-12 col-s-12 col-m-6 col-l-3">
-
-            <div class="card card-custom-styling">
-                <div class="img-container">
-                    <img class="card-img-top" src="./assets/images/LinkedList.JPG" alt="Card image"></a>
-                </div>
+            <div class="card">
+                <div class="img-container"><img class="port-img" src="./assets//images/Donation App.JPG" alt="football"></div>
                 <div class="card-body">
-                    <h4 class="card-title">Linked List React App</h4>
-                    <p class="card-text">Some example text.</p>
-                    <a href="https://github.com/Robert-Queeney/react_list_app" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">See Code</a>
+                    <h4 class=card.title>Donation Site Template App</h4>
+                    <p class="card-text">A fully developed react website with integrated payment systems</p>
+                    <a href="https://github.com/madisonkoch/Footballer-App" target="_blank" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">See
+                        Code</a>
                 </div>
-
             </div>
-
-
         </div>
     </div>
+
+    <footer>
+        <div class="container">
+            Copyright &copy;
+        </div>
+        <div class="social">
+            <a href="#"><img src="./assets/images/GitHub-Mark-Light-32px.png" class="social" alt="GitHub" /></a>
+            <a href="#"><img src="./assets/images/In-White-34px-R.png" class="social" alt="LinkedIn" /></a>
+            <a href="#"><img src="./assets/images/stackoverflow-32.png" class="social" alt="Stack Overflow" /></a>
+        </div>
+    </footer>
+
 </body>
 
 </html>
