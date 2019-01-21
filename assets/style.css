@@ -92,7 +92,7 @@ body {
     border-left: 1px solid #efefef;
   }
 
- a:hover{
+ .header-a:hover{
       color: #FF7200; 
       font-size: 110%
   }
@@ -195,41 +195,30 @@ body {
   
   /* contact page */
   
-  #contact-form ul {
-    margin-bottom: 20px;
-  }
-  
-  #contact-form li {
-    margin-bottom: 10px;
-  }
-  
-  label,
-  input[type=text],
-  input[type=email],
-  textarea {
-    display: block;
-    width: 100%;
-  }
-  
-  input[type=text],
-  input[type=email],
-  textarea {
-    height: 35px;
-    padding: 0 10px;
-    font-size: 14px;
-    border: 1px solid #ddd;
-  }
-  
-  textarea {
-    height: 200px;
-  }
-  
-  input[type=submit] {
-    padding: 10px 30px;
-    font-size: 18px;
-    color: #fff;
-    cursor: pointer;
-    background: #4aaaa5;
-    border: 0 none;
-  }
+.con-container{
+  min-height: 400px;
+
+}
+
+.con-text{
+  display: flex; 
+  flex-direction: column;
+  /* align-items: center;  */
+}
+
+.email-links{
+  max-width: 210px; 
+  /* background-color: lightgray;  */
+  border-bottom: solid 2px #5E5D5C;
+  /* border: solid 3px #5E5D5C;  */
+  margin:20px; 
+}
+
+.email-links:hover{
+  color: #FF7200; 
+  font-size: 110%;
+  border-bottom: solid 5px #FF7200
+}
+
+
   
