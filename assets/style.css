@@ -170,6 +170,9 @@ body {
     width: 300px; 
     border: 1px solid black;
     margin: 30px; 
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow:         3px 3px 5px 6px #ccc;
     
   }
 
@@ -177,6 +180,7 @@ body {
     display: flex; 
     width: 100%;
     justify-content: center;
+
   }
 
   .port-img{
@@ -187,6 +191,11 @@ body {
 
   .card-body{
     padding: 10px; 
+  }
+
+  .buttons{
+    display: flex; 
+    justify-content: space-around; 
   }
 
   /* .port-img{
