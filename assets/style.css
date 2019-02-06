@@ -1,3 +1,5 @@
+
+
 body {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 18px;
@@ -190,7 +192,8 @@ body {
   }
 
   .card-body{
-    padding: 10px; 
+    margin-top: -10px; 
+    padding: 5px; 
   }
 
   .buttons{
@@ -230,4 +233,123 @@ body {
 }
 
 
+/* index */
+.index_div{
+  display: flex; 
+  flex-direction: column;
+  border: none;
+  justify-content: center;
+  padding: 150px; 
+  background: linear-gradient(to right, #ffffff, #f2f3d9);
+ }
+
+.first_name{
+  border: none; 
+  margin: 5px; 
+  color: black;
+  font-size: 90px; 
+  align-self: center;
+  animation: wordmove 4.5s 0s forwards; 
+}
+
+.last_name{
+  border: none; 
+  margin: 5px; 
+  color: black;
+  font-size: 90px; 
+  align-self: center;
+  animation: wordmoveright 4.5s 0s forwards; 
+}
+
+.enter_button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    position: relative; /* This keeps the button in place while the box shadow shrinks */
+    background-color: #33658a;
+    font-size: 28px; 
+    font-weight: 300px; 
+    color: white; 
+    text-transform: uppercase;
+    letter-spacing: 2px; 
+    padding: 25px 80px; 
+    margin: 0 auto; /* this centers the button */
+    border-radius: 20px; /* this rounds the corners */
+    box-shadow: 0 6px #58819f; /* x-offset, y-offset, shadow color */
+    opacity: 0;
+    animation: fadein 4s 1s forwards;
+  }
+
+  .enter_button:hover{
+      box-shadow: 0 4px #58819f; /* this shrinks the shadow as you hover */
+      top: 2px; /* becasue the btn position is relative, this makes the top move instaed of the shadow*/
+  }
+
+  .enter_button:active{
+      box-shadow: 0 0 #58819f;
+      top: 6px; 
+  }
+
+  @keyframes fadein{
+    0% { opacity:0}
+    /* 25% {opacity:.25}
+    50% { opacity:.5}
+    75% {opacity: .75} */
+    100% { opacity:1}
+}
+
+@-webkit-keyframes fadein{
+    0% { opacity:0; }
+    50% { opacity:.5; }
+    100% { opacity:1; }
+}
   
+@keyframes wordmove{
+  0% {
+    transform: translate(-800px)
+  }
+  80% {
+    transform: translate(100px)
+  }
+  100% {
+    transform: translate(0px)
+  }
+}
+
+@-webkit-keyframes wordmove{
+  0% {
+    transform: translate(-800px)
+  }
+  80% {
+    transform: translate(100px)
+  }
+  100% {
+    transform: translate(0px)
+  }
+}
+
+@keyframes wordmoveright {
+  0% {
+    transform: translate(800px)
+  }
+  80% {
+    transform: translate(-100px)
+  }
+  100% {
+    transform: translate(0px)
+  }
+}
+@-webkit-keyframes wordmoveright {
+  0% {
+    transform: translate(800px)
+  }
+  80% {
+    transform: translate(-100px)
+  }
+  100% {
+    transform: translate(0px)
+  }
+}
+
+
