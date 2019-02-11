@@ -241,6 +241,7 @@ body {
   justify-content: center;
   padding: 150px; 
   background: linear-gradient(to right, #ffffff, #f2f3d9);
+  height: 100%; 
  }
 
 .first_name{
