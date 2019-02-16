@@ -1,50 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/reset.css">
-    <link rel="stylesheet" href="./assets/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/reset.css">
+  <link rel="stylesheet" href="./assets/style.css">
 </head>
+
 <body>
-    <header id="masthead">
-        <div class="container">
-          <a href="index.html" id="logo">Robert Queeney</a>
-          <nav>
-            <a class="header-a" href="home.html">About</a>
-            <a class="header-a" href="portfolio.html">Portfolio</a>
-            <a class="header-a" href="contact.html">Contact</a>
-          </nav>
-        </div>
-      </header>
-    
-      <div id="main-container" class="container">
-        <section class="main-section">
-          <h1>About Me</h1>
-    
-          <div class="headshot-wrapper">
-          <img class = "headshot" src="./assets/images/20190117_151008.jpg" class="auth-image" alt="Your Name">
-        </div>
-    
-          <p>Greetings!  Welcome to my portfolio site showcasing my ever-growing collection of software and web development projects.   This is my second professional act, with the past decade plus being in sales, account management, and leadership.</p>
-    
-          <p>My focus is currently on react.js-based applications with some integrations into SQL and NoSQL databases.  Please enjoy the projects showcased in the "portfolio" section, and feel free to connect with me on one of my profiles below.</p>
-    
-        </section>
-    
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Robert Queeney</a>
+      <nav>
+        <a class="header-a" href="home.html">About</a>
+        <a class="header-a" href="portfolio.html">Portfolio</a>
+        <a class="header-a" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div id="main-container" class="container">
+
+    <section class="section2">
+      <p class="hello">Hello<span class="punc">.</span></p><br>
+      <p class="nombre">My Name is</p><br>
+      <p class="jump">Robert.</p><br>
+      <p class="me">I am a <span id="changeText">______</span></p>
+    </section>
+
+    <section class="main-section">
+
+
+      <div class="headshot-wrapper">
+        <img class="headshot" src="./assets/images/20190117_151008.jpg" class="auth-image" alt="Your Name">
       </div>
+
+      <a href="portfolio.html" class="main-bubs projects">Projects</a>
+      <a class="main-bubs resume" href="./assets/RFQ - Full Stack Developer.pdf" target="_blank">Resume</a>
+      <div id="aboutText" class="main-bubs about">About</div>
+      
+      <!-- <div class="main-bubs contact">Contact</div> -->
+
+      <!-- <p>Greetings!  Welcome to my portfolio site showcasing my ever-growing collection of software and web development projects.   This is my second professional act, with the past decade plus being in sales, account management, and leadership.</p>
     
-      <footer>
-        <div class="container">
-          Copyright &copy; Robert Queeney 2019
-        </div>
-        <div class="social">
-            <a href="https://github.com/Robert-Queeney" target="_blank"><img src="./assets/images/GitHub-Mark-Light-32px.png" class="social" alt="GitHub" /></a>
-            <a href="https://www.linkedin.com/in/robert-queeney-22a0294/" target="_blank"><img src="./assets/images/In-White-34px-R.png" class="social" alt="LinkedIn" /></a>
-            <a href="https://stackoverflow.com/users/9939208/robert-queeney" target="_blank"><img src="./assets/images/stackoverflow-32.png" class="social" alt="Stack Overflow" /></a>
-        </div>
-      </footer>
+          <p>My focus is currently on react.js-based applications with some integrations into SQL and NoSQL databases.  Please enjoy the projects showcased in the "portfolio" section, and feel free to connect with me on one of my profiles below.</p> -->
+
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="container">
+      Copyright &copy; Robert Queeney 2019
+    </div>
+    <div class="social">
+      <a href="https://github.com/Robert-Queeney" target="_blank"><img src="./assets/images/GitHub-Mark-Light-32px.png"
+          class="social" alt="GitHub" /></a>
+      <a href="https://www.linkedin.com/in/robert-queeney-22a0294/" target="_blank"><img
+          src="./assets/images/In-White-34px-R.png" class="social" alt="LinkedIn" /></a>
+      <a href="https://stackoverflow.com/users/9939208/robert-queeney" target="_blank"><img
+          src="./assets/images/stackoverflow-32.png" class="social" alt="Stack Overflow" /></a>
+    </div>
+  </footer>
+  <script>
+
+    const heading = document.querySelector('.jump');
+    // this runs the fucntion with the text from the heading
+    // const spans = sparanWrap(heading.textContent)
+    heading.innerHTML = sparanWrap(heading.textContent)
+
+    // this function will spread out the letters
+    function sparanWrap(word) {
+      // this  wraps a span around each letter - the .join gets rid of the commas between letters
+      return [...word].map(letter => `<span>${letter}</span>`).join('');
+    }
+
+    const text = ["Student", "Developer", "Professional", "Father", "Mentor"]; 
+    let counter = 0; 
+    const elem = document.getElementById("changeText"); 
+    const inst = setInterval(change, 1500)
+
+    function change(){
+      elem.innerHTML = text[counter]; 
+      counter ++; 
+      counter >= text.length ? counter = 0 : ''
+    }
+
+// CAn make this how the text changes in the about section
+    // const newText = ["This is my second professional act, with the past decade plus being in sales, account management, and leadership."]  
+
+    // fucntion changeText(e){
+
+    // }
+
+
+  </script>
+
 </body>
+
 </html>
