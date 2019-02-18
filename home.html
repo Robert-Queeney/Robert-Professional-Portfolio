@@ -15,7 +15,8 @@
     <div class="container">
       <a href="index.html" id="logo">Robert Queeney</a>
       <nav>
-        <a class="header-a" href="home.html">About</a>
+        <a class="header-a" href="home.html">Home</a>
+        <!-- <a class="header-a" href="about.html">About</a> -->
         <a class="header-a" href="portfolio.html">Portfolio</a>
         <a class="header-a" href="contact.html">Contact</a>
       </nav>
@@ -40,15 +41,9 @@
 
       <a href="portfolio.html" class="main-bubs projects">Projects</a>
       <a class="main-bubs resume" href="./assets/RFQ - Full Stack Developer.pdf" target="_blank">Resume</a>
-      <div id="aboutText" class="main-bubs about">About</div>
+      <div id="aboutText" class="main-bubs about">About<br>(Coming Soon)</div>
       
-      <!-- <div class="main-bubs contact">Contact</div> -->
-
-      <!-- <p>Greetings!  Welcome to my portfolio site showcasing my ever-growing collection of software and web development projects.   This is my second professional act, with the past decade plus being in sales, account management, and leadership.</p>
-    
-          <p>My focus is currently on react.js-based applications with some integrations into SQL and NoSQL databases.  Please enjoy the projects showcased in the "portfolio" section, and feel free to connect with me on one of my profiles below.</p> -->
-
-    </section>
+      </section>
 
   </div>
 
@@ -89,14 +84,15 @@
       counter >= text.length ? counter = 0 : ''
     }
 
-// CAn make this how the text changes in the about section
-    // const newText = ["This is my second professional act, with the past decade plus being in sales, account management, and leadership."]  
+    // going to use transitionend to change the text
+    const element = document.getElementById("aboutText");
+    const newText = "A born-again developer specializing in Javascript";
+    const oldText = "About"
+    element.addEventListener('transitionend', (event) => {
+     element.innerHTML = newText;
+    }, );
 
-    // fucntion changeText(e){
-
-    // }
-
-
+   
   </script>
 
 </body>
