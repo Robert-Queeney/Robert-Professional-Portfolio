@@ -84,3 +84,6 @@ dotsNav.addEventListener('click', e => {
     hideShowArrows(slides, prevButton, nextButton, targetIndex);
     
 })
+
+// set interval and clear interval
+// document on ready
