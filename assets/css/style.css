@@ -449,6 +449,30 @@ nav ul li a:hover{
     margin-top: 25px; 
 }
 
+/* portfolio */
+
+.buttons {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+}
+
+.mdl-button {
+    height: 50px; 
+    width: 100px; 
+    color: #fff; 
+    background-color: var(--clr-primary);
+    text-decoration: none;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    box-shadow: 0 0 1em rgba(0, 0, 0, .2);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px; 
+    border-radius: 10%; 
+
+}
+
 /* Footer */
 
 footer{
