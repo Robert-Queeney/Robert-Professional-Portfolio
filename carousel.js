@@ -8,6 +8,7 @@ const dots = Array.from(dotsNav.children); // to access the individual dots at b
 
 const slideWidth = slides[0].getBoundingClientRect().width;  //need this to know how far to move when a button is clicked
 console.log("connected");
+// console.log(targetIndex);
 
 //arrange the slides next to eachother
 const setSlidePosition = (slide, index) => {
@@ -39,6 +40,17 @@ const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
     }
 }
 
+// const autoMoveSlides = () => {
+//     if(targetIndex === 2) {
+//         moveToSlide(track, currentSlide, prevSlide)
+//     } else {
+//         moveToSlide(track, currentSlide, nextSlide)
+//     }
+
+// }
+
+// setTimeout(autoMoveSlides, 5000)
+
 // when i click left move slides left
 prevButton.addEventListener('click', e => {
     const currentSlide = track.querySelector('.current-slide');
@@ -57,6 +69,7 @@ prevButton.addEventListener('click', e => {
 nextButton.addEventListener('click', e => {
     const currentSlide = track.querySelector('.current-slide');
     const nextSlide = currentSlide.nextElementSibling; //find this out by console logging current slide and nextElementSibling is in the log
+    console.log(currentSlide);
     const currentDot = dotsNav.querySelector('.current-slide');
     const nextDot = currentDot.nextElementSibling;
     const nextIndex = slides.findIndex(slide => slide === nextSlide);
