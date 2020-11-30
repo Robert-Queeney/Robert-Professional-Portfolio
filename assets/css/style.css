@@ -230,6 +230,19 @@ nav ul li a:hover{
     padding: 10% 1em;  
 }
 
+/* .section-background{
+    content: '';
+    background-size: cover;
+    background-color: black;
+    opacity: .5;
+    z-index: 1;
+} */
+
+.section-title{
+    font-size: 45px;
+    font-family: 'Roboto', sans-serif;
+}
+
 .about-us {
     background: var(--clr-accent);
     display: flex; 
@@ -238,8 +251,9 @@ nav ul li a:hover{
     padding: 0; 
 }
 
+
 .about-us__intro {
-    background-image: url('../images/google-javascript-body-text.jpg');
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.9GQz2qseNa_tZfGiHBEn4gHaFP%26pid%3DApi&f=1');
     background-size: cover;
     background-attachment: fixed;
     padding: 3em 1em 1.5em; 
@@ -248,6 +262,13 @@ nav ul li a:hover{
 
 .about-us__body {
     padding: 1.5em 1em 3em;  
+}
+
+.about-us li {
+    text-align: left;
+    padding: 2px; 
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .order-online {
@@ -387,14 +408,20 @@ nav ul li a:hover{
 /* About us Page */
 
 .about {
-    /* width: 0; 
-    height: 0; 
-    border-top: 100px solid red;
-      border-right: 100px solid transparent; */
+    height: 100vh;
+}
+
+.about-me{
+    display: flex;
+    width: 100%; 
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .about-me__quote {
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
+    width: 100%;  
 }
 
 .about-me__quote__author {
@@ -402,17 +429,17 @@ nav ul li a:hover{
     color: var(--clr-accent-dark);
 }
 
-.about-me{
+/* .about-me{
     display: flex; 
     flex-direction: column;
     align-items: center; 
-}
+} */
 
 .about-me__image-wrapper {
     display: flex; 
     justify-content: center; 
     align-items: center; 
-    border-radius: 50%; 
+    /* border-radius: 50%;  */
     border: 3px solid var(--clr-text);
     height: 320px;
     width: 320px;
@@ -427,7 +454,7 @@ nav ul li a:hover{
     padding: 3em 1em 1.5em; 
     height: 300px;
     width: 300px; 
-    border-radius: 50%; 
+    /* border-radius: 50%;  */
     border: 3px solid var(--clr-text);
     display: flex; 
     justify-content: center; 
@@ -438,12 +465,17 @@ nav ul li a:hover{
     transition: 1000ms;  
 }
 
-.about-me__image:hover{
+/* .text-wrapper {
+    content: '';
+    background-color: black;
+} */
+
+/* .about-me__image:hover{
     font-size: 25px; 
     font-weight: 600; 
     color: var(--clr-primary);
     /* opacity: .5;  */
-}
+/* }  */
 
 .about-me__content {
     width: 50vw; 

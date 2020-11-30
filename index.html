@@ -42,31 +42,41 @@
         <div class="logo">
             <img src="./assets/images/QueeneyLogo.png" alt="Queeney Logo">
         </div>
+        <nav aria-label="main">
         <ul>
             <li><a href="#" class="active">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="./assets/RFQ - Full Stack Developer.pdf">Resume</a></li>
+            <li><a href="./assets/Robert Queeney Accessibility Engineer.pdf">Resume</a></li>
         </ul>
+        </nav>
     </nav>
     <main>
         <section class="hero">
-            <h2 class="section-title">Great code. No hassle. Minimal cost (if any)</h2>
+            <h1 class="section-title">Robert Queeney - Full Stack Accessibility Engineer</h1>
         </section>
         <section class="intro">
             <h2 class="section-title">I am Minneapolis' first
-                <span class="text-primary">web developer</span> from
+                <span class="text-primary">accessibility engineer</span> from
                 <span class="text-primary">my family,</span> ever!
             </h2>
         </section>
 
         <section class="about-us">
-            <header class="about-us__intro">
-                <h2 class="section-title-small  ">I am a full stack developer that leans toward the front end of things.   I specialize in JavaScript and JS related frameworks and libraries.</h2>
-            </header>
+            <div class="about-us__intro">
+                <div class="section-background"> 
+                    <h2 class="section-title-small  ">I am a full stack developer, coding instructor, and accessibility engineer.   I specialize in JavaScript and JS related frameworks and libraries.</h2>
+                </div>
+            </div>
             <div class="about-us__body">
-                <p>I'll be totally transarent here; I hate talking about myself.  However, since this is a site whose whole purpose is to showcase my abilities and work, I suppose some of that will just have to happen.</p>
-                <p>Develpment is a relatively new endeavor for me, as I spent the first part of my professional life as a sales executive.   I realized (slowly and only after many years) that I was missing something.  I am passionate about technology and how its applications can better our lives...so here I am.  </p>
+                <h3>Skills / Competencies:</h3>
+                <ul>
+                    <li>Design Reviews / Accessibility Consulting</li>
+                    <li>Manual Accessibility Auditing / QA Testing</li>
+                    <li>React & React Native Development</li>
+                    <li>Screen Reader proficieny</li>
+                    <li>WCAG 2.0 & 2.1 AA Expertise</li>
+                </ul>
             </div>
         </section>
 
@@ -74,7 +84,7 @@
 
         <section class="carousel">
             <button class="carousel__button carousel__button--left is-hidden">
-                <
+                Prev
             </button>
             <div class="carousel__track-container">
                 <div class="carousel__header">
@@ -103,7 +113,7 @@
                 </ul>
             </div>
             <button class="carousel__button carousel__button--right">
-                >
+                Next
             </button>
         </section>
 
@@ -186,8 +196,8 @@
         </ul>
 
         <ul class="footer-social">
-            <li><a href="https://www.linkedin.com/in/robert-queeney-22a0294/" target="_blank"><i class="fab fa-linkedin-in fa-2x social-icon"></i></a></li>
-            <li><a href="https://github.com/Robert-Queeney" target="_blank"><i class="fab fa-github fa-2x   social-icon"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/robert-queeney-22a0294/" aria-label="Robert's linkedin profile" target="_blank"><i aria-hidden="true" class="fab fa-linkedin-in fa-2x social-icon"></i></a></li>
+            <li><a href="https://github.com/Robert-Queeney" aria-label="Robert's github account" target="_blank"><i class="fab fa-github fa-2x   social-icon"></i></a></li>
         </ul>
     </footer>
     <script src="./carousel.js"></script>
